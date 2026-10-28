@@ -1,27 +1,42 @@
-# 飞购企业采购(B2B)
+# 🏢 飞购企业采购 (B2B)
 
-> 阳光采购 · 阶梯批发
+> 一站式企业采购管理平台，助力企业数字化采购转型
 
-零依赖（Python 标准库 + SQLite）的 飞购，飞系电商系列成员。
+## 📖 项目简介
 
-## 运行
+飞购企业采购是一个面向中大型企业的 B2B 采购管理系统，涵盖从采购申请、审批、合同签署到发票结算的全流程闭环，帮助企业实现采购业务的规范化、透明化和高效化。
+
+## ✨ 核心特性
+
+- 🏛️ **企业账户体系** — 多角色、多层级的组织架构与权限管理
+- 📝 **合同管理** — 在线合同起草、审批、签署与归档
+- 🧾 **发票系统** — 支持增值税专用发票、普通发票的开具与核验
+- 🛒 **采购流程** — 从需求提报到订单履约的全链路管理
+- 💰 **结算对账** — 自动对账、账期管理与支付跟踪
+- 📊 **数据报表** — 采购分析、供应商评估与成本可视化
+- 🔐 **安全合规** — 操作审计、数据加密与合规性保障
+
+## 🚀 快速开始
 
 ```bash
-cd backend
-python server.py
-# 访问 http://127.0.0.1:8107/ ，三角色: admin/admin123 · ops01/ops123456 · view01/view123456
+# 克隆项目
+git clone https://github.com/dukema81/feigou-b2b.git
+cd feigou-b2b
+
+# 安装依赖
+npm install
+
+# 启动开发环境
+npm run dev
+
+# 构建生产版本
+npm run build
 ```
 
-## 测试
+## 📄 许可证
 
-```bash
-python -m pytest tests/ -q
-```
+本项目基于 [MIT License](LICENSE) 开源许可协议。
 
-## 目录
+---
 
-- backend/  通用引擎 engine.py + 规格 spec.json + 服务入口 server.py
-- frontend/ 原生 JS SPA（门店 + 统计 + 规格驱动后台）
-- tools/    专属 Logo（icon.svg）+ UI 巡检（ui_check.py，零依赖探活+截图）
-- docs/     建设方案
-- tests/    API 集成测试（真实起服务全链路断言）
+Made with ❤️ by dukema81
